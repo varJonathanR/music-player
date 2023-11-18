@@ -2,7 +2,7 @@
 
 ## Overview
 
-![Music Player Preview](https://github.com/varJonathanR/multi-step-register/blob/main/src/asstes/music-player_preview.png)
+![Music Player Preview](https://github.com/varJonathanR/music-player/blob/main/src/assets/music-player_preview.png)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8d1aeb35-4ea3-4c17-a630-d5b33bee78c5/deploy-status)](https://app.netlify.com/sites/music-player-varjonathanr/deploys)
 
