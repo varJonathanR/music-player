@@ -1,0 +1,139 @@
+/* Base & Reset */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+:root {
+  --inter-font: "Inter", sans-serif;
+  --dark: #121826a6;
+  --gray: #4D5562;
+  --light: #E5E7EB;
+  --pink: #C93B76;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: var(--inter-font);
+}
+
+body {
+  background-image: url("./assets/imgs/bg.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+h1, p {
+  text-transform: capitalize;
+}
+
+h1, i {
+  color: var(--light);
+}
+
+p, span {
+  color: var(--gray);
+}
+
+button, input {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* FLEX STYLES */
+.container,
+.control-panel,
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles */
+.container {
+  background-color: var(--dark);
+  border-radius: 20px;
+  padding: 1rem;
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  flex-direction: column;
+}
+.container .profile {
+  position: relative;
+  display: block;
+  border-radius: 15px;
+  margin: 10px auto;
+  width: 340px;
+  height: 340px;
+  background-image: url("./assets/imgs/cover-1.png");
+  background-size: cover;
+}
+.container .slider {
+  width: 100%;
+  position: relative;
+}
+.container .slider .seek-bar {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background-color: var(--light);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.container .slider .seek-bar::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  box-shadow: -400px 0 0 400px var(--pink);
+}
+.container .slider .current-time, .container .slider .duration-time {
+  font-size: 14px;
+}
+.container .slider .duration-time {
+  position: absolute;
+  right: 0;
+}
+.container .control-panel {
+  margin-top: 1rem;
+  flex-direction: row;
+}
+.container .control-panel .btn-play {
+  background-color: var(--pink);
+  color: var(--light);
+  width: 50px;
+  height: 50px;
+}
+.container .control-panel .btn-play i {
+  display: none;
+  font-size: 1.5rem;
+}
+.container .control-panel .btn-play.pause img {
+  display: none;
+}
+.container .control-panel .btn-play.pause i {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 300px;
+    height: 450px;
+  }
+  .container .profile {
+    width: 290px;
+    height: 290px;
+  }
+}/*# sourceMappingURL=styles.css.map */
