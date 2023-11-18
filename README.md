@@ -13,7 +13,7 @@ This project was uploaded as a submission for [Music Player](https://devchalleng
 ## Built With
 
 - HTML5
--[SASS](https://sass-lang.com/)
+- [SASS](https://sass-lang.com/)
 - JavaScript
 
 ## Contact
